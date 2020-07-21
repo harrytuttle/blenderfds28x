@@ -329,7 +329,7 @@ def split_meshes_by_axis(axis,split,meshes):
             splitted.extend([axbs,bxbs])
         return splitted
     else:
-        return split_meshes_by_axis(axis,split/2,split_meshes_by_axis(axis,split/2,meshes))
+        return split_meshes_by_axis(axis,split/2,split_meshes_by_axis(axis,2,meshes))
 
 def split_mesh_by_all_axis(splits,mesh):
     """!
